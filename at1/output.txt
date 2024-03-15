@@ -1,0 +1,28 @@
+OUTPUT 1:
++------+-----------------+-------+------+----------+------------------+
+| id   | name            | grade | age  | course   | program          |
++------+-----------------+-------+------+----------+------------------+
+| S003 | Steve Jobs      | A     |   36 | Database | Computer Science |
+| S004 | John Stuart     | A     |   30 | Database | Computer Science |
+| S005 | Cassandra Smith | A     |   29 | Database | Computer Science |
+| S006 | Lucy Smith      | A     |   30 | Database | Computer Science |
+| S007 | Ashely Simpson  | A     |   26 | Database | Computer Science |
+| S008 | Hillary Snowden | A     |   30 | Database | Computer Science |
+| S009 | Kamala Liu      | A     |   30 | Database | Computer Science |
+| S010 | Britney Stuart  | A     |   25 | Database | Computer Science |
++------+-----------------+-------+------+----------+------------------+
+
+OUTPUT 2:
++------+-----------------+-------+------+----------------------+------------------+
+| id   | name            | grade | age  | course               | program          |
++------+-----------------+-------+------+----------------------+------------------+
+| S001 | Elon Musk       | C     |   52 | Software Engineering | Computer Science |
+| S003 | Steve Jobs      | A     |   36 | Database             | Computer Science |
+| S004 | John Stuart     | A     |   30 | Database             | Computer Science |
+| S005 | Cassandra Smith | A     |   29 | Database             | Computer Science |
+| S006 | Lucy Smith      | A     |   30 | Database             | Computer Science |
+| S007 | Ashely Simpson  | A     |   26 | Database             | Computer Science |
+| S008 | Hillary Snowden | A     |   30 | Database             | Computer Science |
+| S009 | Kamala Liu      | A     |   30 | Database             | Computer Science |
+| S010 | Britney Stuart  | A     |   25 | Database             | Computer Science |
++------+-----------------+-------+------+----------------------+------------------+
