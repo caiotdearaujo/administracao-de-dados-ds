@@ -1,13 +1,3 @@
--- tarefa 1
-CREATE TABLE students (
-  id CHAR(4) PRIMARY KEY,
-  name VARCHAR(30),
-  grade CHAR(1),
-  age INT,
-  course VARCHAR(30),
-  program VARCHAR(30)
-);
-
 -- tarefa 2
 INSERT INTO students (id, name, age, course)
 VALUES ('S001', 'Elon Musk', 36, 'Software Engineering'),
@@ -24,20 +14,3 @@ VALUES ('S001', 'Elon Musk', 36, 'Software Engineering'),
 UPDATE students
 SET grade = 'A', 
     program = 'Computer Science';
-
--- tarefa 3
-SELECT * FROM students
-WHERE course = 'Database';
-
--- tarefa 4
-UPDATE students
-SET grade = 'C', 
-    age = 52 
-WHERE id = 'S001';
-
--- tarefa 5
-DELETE FROM students 
-WHERE id = 'S002';
-
--- tarefa 6
-SELECT * FROM students;
