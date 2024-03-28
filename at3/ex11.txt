@@ -1,0 +1,2 @@
+11. Quais são as relações existentes entre Grandes Modelos de Linguagem (Large Language Model - LLM) e Banco de Dados? Justifique a sua resposta e forneça dois exemplos de uso.
+
