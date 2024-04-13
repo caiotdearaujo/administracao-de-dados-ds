@@ -1,0 +1,71 @@
+select * from funcionario:
+Retorna a lista completa de todos os registros da tabela funcionario, com todas as suas colunas.
+
+select sum(idade) from funcionario:
+Retorna a soma de todas as idades dos funcionários.
+
+select max(salario) from funcionario:
+Retorna o maior valor de salário entre os funcionários.
+
+select min(salario) from funcionario:
+Retorna o menor valor de salário entre os funcionários.
+
+select power(8,2) from funcionario:
+Retorna o resultado de 8 elevado à potência de 2, ou seja, 64.
+
+select log(3,2):
+Retorna o logaritmo de base 2 para o valor 3.
+
+select sqrt(10):
+Retorna a raiz quadrada de 10.
+
+select mod(8,3):
+Retorna o resto da divisão de 8 por 3.
+
+select ceil(81.9):
+Retorna o menor inteiro maior ou igual a 81.9, ou seja, 82.
+
+select ceil(92.560):
+Retorna o menor inteiro maior ou igual a 92.560, ou seja, 93.
+
+select 15 + 10 - 5 * 5 / 5:
+Calcula a expressão matemática e retorna o resultado 15.
+
+select 130 % 7:
+Retorna o resto da divisão de 130 por 7.
+
+select 30 % 6:
+Retorna o resto da divisão de 30 por 6, que é zero.
+
+select greatest(10, 9, 2, 4, 300):
+Retorna o maior valor entre os números fornecidos, que é 300.
+
+select least(100, 9, 1, 4, 3):
+Retorna o menor valor entre os números fornecidos, que é 1.
+
+select .25678 + .00096356:
+Calcula a soma de 0.25678 e 0.00096356 e retorna o resultado.
+
+select .75 - .68:
+Calcula a diferença entre 0.75 e 0.68 e retorna o resultado 0.07.
+
+select 100.0 / 12.0:
+Calcula a divisão de 100 por 12 e retorna o resultado.
+
+select ((100 + 100) - (50 + 50)):
+Calcula a expressão matemática e retorna o resultado 100.
+
+select char_length('Escola Técnica Estadual Porto Digital'):
+Retorna o comprimento (número de caracteres) da string "Escola Técnica Estadual Porto Digital".
+
+select lcase("PERNAMBUCO"):
+Converte a string "PERNAMBUCO" para minúsculas.
+
+select left('BRASILEIRO', 3):
+Retorna os 3 primeiros caracteres da string "BRASILEIRO", ou seja, "BRA".
+
+select right('BRASILEIRO', 3):
+Retorna os 3 últimos caracteres da string "BRASILEIRO", ou seja, "IRO".
+
+select reverse('Brasil'):
+Retorna a string "Brasil" invertida, ou seja, "lisarB".
