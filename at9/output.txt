@@ -1,0 +1,116 @@
++------------+------+----------------+
+| id_empresa | nome | cidade         |
++------------+------+----------------+
+|         10 | EmpC | rio de janeiro |
+|         11 | EmpD | porto alegre   |
+|         12 | EmpA | recife         |
+|         14 | EmpB | aracaju        |
++------------+------+----------------+
++-------------+-----------+-------+------------+
+| id_alimento | nome_item | preco | id_empresa |
++-------------+-----------+-------+------------+
+|          11 | carne     |    18 |         10 |
+|          12 | tomate    |   4.5 |         11 |
+|          13 | arroz     |  23.6 |         12 |
+|          15 | milho     |   2.5 |         14 |
++-------------+-----------+-------+------------+
++--------------+
+| -INNER JOIN- |
++--------------+
+| -INNER JOIN- |
++--------------+
++------------+------+--------------+-------------+-----------+-------+------------+
+| id_empresa | nome | cidade       | id_alimento | nome_item | preco | id_empresa |
++------------+------+--------------+-------------+-----------+-------+------------+
+|         11 | EmpD | porto alegre |          11 | carne     |    18 |         10 |
+|         12 | EmpA | recife       |          12 | tomate    |   4.5 |         11 |
++------------+------+--------------+-------------+-----------+-------+------------+
++-------------+
+| -LEFT JOIN- |
++-------------+
+| -LEFT JOIN- |
++-------------+
++------------+------+----------------+-------------+-----------+-------+------------+
+| id_empresa | nome | cidade         | id_alimento | nome_item | preco | id_empresa |
++------------+------+----------------+-------------+-----------+-------+------------+
+|         10 | EmpC | rio de janeiro |        NULL | NULL      |  NULL |       NULL |
+|         11 | EmpD | porto alegre   |          11 | carne     |    18 |         10 |
+|         12 | EmpA | recife         |          12 | tomate    |   4.5 |         11 |
+|         14 | EmpB | aracaju        |        NULL | NULL      |  NULL |       NULL |
++------------+------+----------------+-------------+-----------+-------+------------+
++--------------+
+| -RIGHT JOIN- |
++--------------+
+| -RIGHT JOIN- |
++--------------+
++------------+------+--------------+-------------+-----------+-------+------------+
+| id_empresa | nome | cidade       | id_alimento | nome_item | preco | id_empresa |
++------------+------+--------------+-------------+-----------+-------+------------+
+|         11 | EmpD | porto alegre |          11 | carne     |    18 |         10 |
+|         12 | EmpA | recife       |          12 | tomate    |   4.5 |         11 |
+|       NULL | NULL | NULL         |          13 | arroz     |  23.6 |         12 |
+|       NULL | NULL | NULL         |          15 | milho     |   2.5 |         14 |
++------------+------+--------------+-------------+-----------+-------+------------+
++-----------------+
+| -STRAIGHT JOIN- |
++-----------------+
+| -STRAIGHT JOIN- |
++-----------------+
++------------+------+----------------+-------------+-----------+-------+------------+
+| id_empresa | nome | cidade         | id_alimento | nome_item | preco | id_empresa |
++------------+------+----------------+-------------+-----------+-------+------------+
+|         14 | EmpB | aracaju        |          11 | carne     |    18 |         10 |
+|         12 | EmpA | recife         |          11 | carne     |    18 |         10 |
+|         11 | EmpD | porto alegre   |          11 | carne     |    18 |         10 |
+|         10 | EmpC | rio de janeiro |          11 | carne     |    18 |         10 |
+|         14 | EmpB | aracaju        |          12 | tomate    |   4.5 |         11 |
+|         12 | EmpA | recife         |          12 | tomate    |   4.5 |         11 |
+|         11 | EmpD | porto alegre   |          12 | tomate    |   4.5 |         11 |
+|         10 | EmpC | rio de janeiro |          12 | tomate    |   4.5 |         11 |
+|         14 | EmpB | aracaju        |          13 | arroz     |  23.6 |         12 |
+|         12 | EmpA | recife         |          13 | arroz     |  23.6 |         12 |
+|         11 | EmpD | porto alegre   |          13 | arroz     |  23.6 |         12 |
+|         10 | EmpC | rio de janeiro |          13 | arroz     |  23.6 |         12 |
+|         14 | EmpB | aracaju        |          15 | milho     |   2.5 |         14 |
+|         12 | EmpA | recife         |          15 | milho     |   2.5 |         14 |
+|         11 | EmpD | porto alegre   |          15 | milho     |   2.5 |         14 |
+|         10 | EmpC | rio de janeiro |          15 | milho     |   2.5 |         14 |
++------------+------+----------------+-------------+-----------+-------+------------+
++--------------+
+| -CROSS JOIN- |
++--------------+
+| -CROSS JOIN- |
++--------------+
++------------+------+----------------+-------------+-----------+-------+------------+
+| id_empresa | nome | cidade         | id_alimento | nome_item | preco | id_empresa |
++------------+------+----------------+-------------+-----------+-------+------------+
+|         14 | EmpB | aracaju        |          11 | carne     |    18 |         10 |
+|         12 | EmpA | recife         |          11 | carne     |    18 |         10 |
+|         11 | EmpD | porto alegre   |          11 | carne     |    18 |         10 |
+|         10 | EmpC | rio de janeiro |          11 | carne     |    18 |         10 |
+|         14 | EmpB | aracaju        |          12 | tomate    |   4.5 |         11 |
+|         12 | EmpA | recife         |          12 | tomate    |   4.5 |         11 |
+|         11 | EmpD | porto alegre   |          12 | tomate    |   4.5 |         11 |
+|         10 | EmpC | rio de janeiro |          12 | tomate    |   4.5 |         11 |
+|         14 | EmpB | aracaju        |          13 | arroz     |  23.6 |         12 |
+|         12 | EmpA | recife         |          13 | arroz     |  23.6 |         12 |
+|         11 | EmpD | porto alegre   |          13 | arroz     |  23.6 |         12 |
+|         10 | EmpC | rio de janeiro |          13 | arroz     |  23.6 |         12 |
+|         14 | EmpB | aracaju        |          15 | milho     |   2.5 |         14 |
+|         12 | EmpA | recife         |          15 | milho     |   2.5 |         14 |
+|         11 | EmpD | porto alegre   |          15 | milho     |   2.5 |         14 |
+|         10 | EmpC | rio de janeiro |          15 | milho     |   2.5 |         14 |
++------------+------+----------------+-------------+-----------+-------+------------+
++----------------+
+| -NATURAL JOIN- |
++----------------+
+| -NATURAL JOIN- |
++----------------+
++------------+------+----------------+-------------+-----------+-------+
+| id_empresa | nome | cidade         | id_alimento | nome_item | preco |
++------------+------+----------------+-------------+-----------+-------+
+|         10 | EmpC | rio de janeiro |          11 | carne     |    18 |
+|         11 | EmpD | porto alegre   |          12 | tomate    |   4.5 |
+|         12 | EmpA | recife         |          13 | arroz     |  23.6 |
+|         14 | EmpB | aracaju        |          15 | milho     |   2.5 |
++------------+------+----------------+-------------+-----------+-------+
